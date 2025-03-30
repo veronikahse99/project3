@@ -1,6 +1,12 @@
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter-Black.ttf') format('truetype'),
-    url('../fonts/Inter-BlackItalic.woff') format('woff');
+  font-family: 'Divagon';
+  src: url('../fonts/Divagon.ttf') format('truetype'),
+    url('../fonts/Divagon.woff') format('woff');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Firasans';
+  src: url('../fonts/FiraSans.ttf') format('truetype'),
+    url('../fonts/FiraSans.woff') format('woff');
   font-style: normal;
 }

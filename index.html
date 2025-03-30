@@ -3,14 +3,262 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Yeti bar</title>
     <link rel="stylesheet" href="stylesheet/style.css" />
+    <link rel="icon" href="images/icon.ico" type="image/x-icon" />
+    <link rel="icon" href="" type="image/x-icon" />
   </head>
   <body>
     <div class="block1">
-      <img  id="train" class="yeti1" src="images/yeti1.svg" alt="" />
+      <img
+        class="yeti1"
+        src="images/yeti1.svg"
+        alt="Image"
+        id="shakableImage"
+      />
+
+      <img
+        src="images/yeti2.svg"
+        alt=""
+        class="yeti2"
+        alt="Image2"
+        id="shakableImage2"
+      />
+
+      <div class="container" id="imageContainer">
+        <img src="images/k1.svg" alt="" class="draggable k1" draggable="true" />
+        <img src="images/k2.svg" alt="" class="draggable k2" draggable="true" />
+        <img src="images/k3.svg" alt="" class="draggable k3" draggable="true" />
+        <img src="images/k4.svg" alt="" class="draggable k4" draggable="true" />
+        <img src="images/k5.svg" alt="" class="draggable k5" draggable="true" />
+      </div>
+
+      <ul class="h1_block1">
+        <li>Какой</li>
+        <li class="li2">Ты</li>
+        <li class="li3">йети?</li>
+      </ul>
     </div>
+    <div class="block2">
+      <h1 class="title2">
+        Выбери основу <br />
+        для йети напитка
+      </h1>
+      <img src="images/cvetok.svg" alt="" class="knopka" />
+      <div class="flowwers">
+        <div class="photo-gallery">
+          <div class="photo-frame" onclick="revealImage(0)">
+            <img src="images/galf.svg" class="main-photo" id="photo1" />
+            <img src="images/overlay2.svg" class="hidden-image" id="hidden1" />
+          </div>
+          <div class="photo-frame" onclick="revealImage(1)">
+            <img src="images/galf.svg" class="main-photo" id="photo2" />
+            <img src="images/overlay1.svg" class="hidden-image" id="hidden2" />
+          </div>
+          <div class="photo-frame" onclick="revealImage(2)">
+            <img src="images/galf.svg" class="main-photo" id="photo3" />
+            <img src="images/overlay3.svg" class="hidden-image" id="hidden3" />
+          </div>
+          <div class="photo-frame" onclick="revealImage(3)">
+            <img src="images/galf.svg" class="main-photo" id="photo4" />
+            <img src="images/overlay4.svg" class="hidden-image" id="hidden4" />
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <img
+          class="bok1"
+          src="images/bok1.png"
+          alt="Image 1"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="bok2"
+          src="images/bok2.png"
+          alt="Image 2"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="bok3"
+          src="images/bok3.png"
+          alt="Image 3"
+          onclick="changeImage(this)"
+        />
+        <img
+          class="bok4"
+          src="images/bok4.png"
+          alt="Image 4"
+          onclick="changeImage(this)"
+        />
+      </div>
+      <div class="podstavka">
+        <img src="images/flowwrs.svg" alt="" class="padstavka p" />
+        <img src="images/flowwrs.svg" alt="" class="padstavka p2" />
+        <img src="images/flowwrs.svg" alt="" class="padstavka p3" />
+        <img src="images/flowwrs.svg" alt="" class="padstavka p4" />
+      </div>
+      <div class="main-image">
+        <img id="displayedImage" src="images/bok1.svg" alt="Displayed Image" />
+      </div>
+    </div>
+    <div class="block3">
+      <h1 class="title3">Давай украсим?</h1>
+      <img src="images/r1.svg" alt="" class="r1" />
+      <img src="images/r2.svg" alt="" class="r2" />
+      <img src="images/r3.svg" alt="" class="r3" />
+      <img src="images/r4.svg" alt="" class="r4" />
+      <img src="images/r5.svg" alt="" class="r5" />
+      <img src="images/r6.svg" alt="" class="r6" />
+    </div>
+    <div class="block4">
+      <h1 class="title4">вот, что у нас получилось</h1>
+      <img src="images/cv1.svg" alt="" class="cv1" />
+      <img src="images/cv2.svg" alt="" class="cv2" />
+      <img src="images/cv3.svg" alt="" class="cv3" />
+      <img src="images/cv4.svg" alt="" class="cv4" />
+      <img src="images/cv5.svg" alt="" class="cv5" />
+      <img src="images/cv6.svg" alt="" class="cv6" />
+    </div>
+
+    <div class="thumbnails">
+      <img
+        class="ukr1"
+        src="images/u1.svg"
+        alt="Страница 1"
+        onclick="showPage(1);displaySpecialImage(this.src)"
+      />
+      <img
+        class="ukr2"
+        src="images/u2.svg"
+        alt="Страница 2"
+        onclick="showPage(2);displaySpecialImage(this.src)"
+      />
+      <img
+        class="ukr3"
+        src="images/u3.svg"
+        alt="Страница 3"
+        onclick="showPage(3);displaySpecialImage(this.src)"
+      />
+      <img
+        class="ukr4"
+        src="images/u4.svg"
+        alt="Страница 4"
+        onclick="showPage(4);displaySpecialImage(this.src)"
+      />
+      <img
+        class="ukr5"
+        src="images/u5.svg"
+        alt="Страница 5"
+        onclick="showPage(5);displaySpecialImage(this.src)"
+      />
+      <img
+        class="ukr6"
+        src="images/u6.svg"
+        alt="Страница 6"
+        onclick="showPage(6);displaySpecialImage(this.src)"
+      />
+    </div>
+    <div class="special-preview" id="special-preview"></div>
+
+    <div id="modal" class="modal">
+      <div id="page1" class="page active p1">
+        <h1 class="titley1">На основе твоего йети напитка <br />ты йети...</h1>
+        <img src="images/cvetochk.svg" alt="" class="cvetochk" />
+        <div class="blocktable">
+          <h1 class="titletable">Милашка</h1>
+          <p class="tabletext">
+            Ты ценишь уют и комфорт. Заботишься о своих друзьях и одеваешься в
+            пастельных тонах. Можешь быть немного стеснительным, но очень милым
+            и понимающим. Люди обращаются к тебе за советом и помощью. для
+            хорошего стилечка тебе стоит одеваться в розовый цвет и пить чай с
+            малиной и ромашкой. Ты супер!
+          </p>
+          <img src="images/ramka1.svg" alt="" class="ramka1" />
+        </div>
+        <img src="images/y1.svg" alt="" class="y1" />
+      </div>
+      <div id="page2" class="page p2">
+        <h1 class="titley1">На основе твоего йети напитка <br />ты йети...</h1>
+        <img src="images/cvetochk.svg" alt="" class="cvetochk" />
+        <div class="blocktable">
+          <h1 class="titletable">дерзкий</h1>
+          <p class="tabletext">
+            Ты можешь казаться немного дерзким и пугающим, но за своих друзей ты
+            будешь стоять горой. Любишь приключения и азарт. Тебе может быть
+            сложно контролировать свои эмоции, но ты легко отходишь от злости и
+            грусти. Окружающие видят тебя лидером, умеющим брать ответственность
+            за других. Ты супер!
+          </p>
+          <img src="images/ramka1.svg" alt="" class="ramka1" />
+        </div>
+        <img src="images/y2.svg" alt="" class="y1" />
+      </div>
+      <div id="page3" class="page p3">
+        <h1 class="titley1">На основе твоего йети напитка <br />ты йети...</h1>
+        <img src="images/cvetochk.svg" alt="" class="cvetochk" />
+        <div class="blocktable">
+          <h1 class="titletable">Вежливый</h1>
+          <p class="tabletext">
+            Ты очень гостеприимен и дружелюбен. По темпераменту можешь быть
+            флегматичным. Ты спокоен и имеешь хорошее чувство юмора. У тебя
+            узкий круг друзей, который проверен годами. Любишь классический
+            стиль в одежде и слушать старую музыку. Прочитал много книг, в
+            особенности детективы. Ты супер!
+          </p>
+          <img src="images/ramka1.svg" alt="" class="ramka1" />
+        </div>
+        <img src="images/y3.svg" alt="" class="y1" />
+      </div>
+      <div id="page4" class="page p4">
+        <h1 class="titley1">На основе твоего йети напитка <br />ты йети...</h1>
+        <img src="images/cvetochk.svg" alt="" class="cvetochk" />
+        <div class="blocktable">
+          <h1 class="titletable">Стиляга</h1>
+          <p class="tabletext">
+            Ты модник... увлекаешься показами и фешн журналами. Всегда знаешь о
+            стильных новинках и рассказываешь о них окружающим, а они только
+            закатывают глаза. любишь быть в центре внимания и отжигать на
+            танцполе каждый раз как в последний. Смотришь только нишевые фильмы
+            и пшикаешься дорогими духами. Ты супер!
+          </p>
+          <img src="images/ramka1.svg" alt="" class="ramka1" />
+        </div>
+        <img src="images/y4.svg" alt="" class="y1" />
+      </div>
+      <div id="page5" class="page p5">
+        <h1 class="titley1">На основе твоего йети напитка <br />ты йети...</h1>
+        <img src="images/cvetochk.svg" alt="" class="cvetochk" />
+        <div class="blocktable">
+          <h1 class="titletable">Всезнайка</h1>
+          <p class="tabletext">
+            Ты очень умный и находчивый, можешь быть перфекционистом и желать
+            постоянно развиваться в разных сферах. Друзей, возможно, у тебя не
+            так много, но всем им ты постоянно помогаешь и даешь разного рода
+            советы. Для твоего типа личности Йети-бар советует расслабиться с
+            нашими напитками и потанцевать. Ты супер!
+          </p>
+          <img src="images/ramka1.svg" alt="" class="ramka1" />
+        </div>
+        <img src="images/y6.svg" alt="" class="y1" />
+      </div>
+      <div id="page6" class="page p6">
+        <h1 class="titley1">На основе твоего йети напитка <br />ты йети...</h1>
+        <img src="images/cvetochk.svg" alt="" class="cvetochk" />
+        <div class="blocktable">
+          <h1 class="titletable">Звезда</h1>
+          <p class="tabletext">
+            Ты очень популярна в своих кругах, потому что заходя в помещение, ты
+            заполняешь все пространство своей бешеной харизмой. У тебя куча
+            фанатов и фанаток, а в кармашке всегда есть трендовое комбо из
+            блеска и карандаша для губ. Ты любишь делать много фоток в соцсети и
+            сплетничать с подружками за чашечкой латте. Ты супер!
+          </p>
+          <img src="images/ramka1.svg" alt="" class="ramka1" />
+        </div>
+        <img src="images/y5.svg" alt="" class="y1" />
+      </div>
+    </div>
+
     <script src="javascript/js.js"></script>
-  
   </body>
 </html>
